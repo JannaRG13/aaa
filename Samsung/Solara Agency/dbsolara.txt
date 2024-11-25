@@ -1,0 +1,83 @@
+Base de datos 1
+
+CREATE DATABASE login_system
+
+
+Base de datos 2 (se coloca en el sql de login_system)
+
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, 
+username VARCHAR(50) NOT NULL UNIQUE, 
+password VARCHAR(255) NOT NULL, 
+create_at TIMESTAMP DEFAULT 
+CURRENT_TIMESTAMP);
+
+
+
+Base de datos 3 (se coloca en el sql de login_system)
+
+CREATE TABLE products (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    stock INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+Base de datos 4 (se coloca en el sql de products)
+base de datos janna
+ALTER TABLE products ADD COLUMN image VARCHAR(255);
+
+-- Insertar productos de muestra con imágenes
+BASE DE DATOS MODIFICADA PARA EL PROYECTO DE SOLARA 
+
+INSERT INTO products (name, price, stock) VALUES
+('chevroletonix', 14500.00, 2),
+('nissanmarch', 15000.00, 2),
+('kiario', 15500.00, 2),
+('hyundaiaccent', 16000.00, 2),
+('toyotayaris', 16500.00, 2),
+
+--- GAMMA MEDIA ---
+
+('hondacivic', 22000.00, 2),
+('mazdasport', 23000.00, 2),
+('kiaforte', 20000.00, 2),
+('hyundaielantra', 21000.00, 2),
+('toyotacorolla', 22000.00, 2),
+
+--- GAMMA ALTA ---
+
+('mercedescclass', 43000.00, 2),
+('bmwserie3', 42000.00, 2),
+('audia4', 40000.00, 2),
+('lexus', 41000.00, 2),
+('infiniti', 39000.00, 2),
+
+
+--- USADOS, GAMA BAJA ---
+
+('fordfiesta', 8500.00, 2),
+('volkswagenpolo', 7500.00, 2),
+('hondafit', 7500.00, 2),
+('mitsubishimirage', 7500.00, 2),
+('renaultclio', 6500.00, 2),
+('nissanversa', 6500.00, 2),
+('suzukiswift', 6500.00, 2),
+('peugeot', 5500.00, 2),
+('nissanmicra', 5000.00, 2),
+('chevroletaveo', 4500.00, 2),
+
+--- USADOS, GAMA MEDIA ---
+
+('fordfusion', 15000.00, 2),
+('hyundaisonata', 14000.00, 2),
+('volkswgenpassat', 13500.00, 2),
+('volkswgenjetta', 13000.00, 2),
+('renaulttalisman', 13000.00, 2),
+('nissanaltima', 12000.00, 2),
+('fordmondeo', 12000.00, 2),
+('chrysler', 11000.00, 2),
+('dodgedart', 10000.00, 2),
+('kiaoptima', 9000.00, 2);

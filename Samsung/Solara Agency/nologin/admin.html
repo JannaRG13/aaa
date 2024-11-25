@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Samsung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrusel.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+    border-radius: 40px;
+    font-family: "Outfit", sans-serif;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(159, 159, 159);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  transition: 0.3s;
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+header
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+h1,h2,h3,h4,h5,h6,p
+{font-family: "Outfit", sans-serif;
+}
+section
+{
+    padding-left: 55px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont
+{
+    text-align: center;
+    border:2px solid black;
+    height: 450px;
+    width: 270px;
+    margin-right: 15px;
+}
+.cont img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.divfoot
+        {
+            color: #000000;
+            text-align: justify;
+            margin-right: 40px;
+            width: 30%;
+            height: auto;
+            padding: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        input
+        {
+            border-radius: 40px; border: 2px solid black; height: 50px; width: 250px; background-color: #ffffff;
+        }
+        input::placeholder
+        {
+            color: #000000;
+        }
+        .enviar
+        {
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+        }
+        .enviar:hover
+        {
+            background-color: #cacaca;
+            color: black;
+            
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+        }
+        footer
+    {
+      border: 3px solid black;
+        background-color: #ffffff;
+        color: #ffffff; 
+        display: flex;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<!-- HEADER -->
+<header>
+  <img style="height: 100%; width: 30%;" src="logo.png" alt=""> <a href="../admin.php" style="font-size: 45px; font-family: Outfit; float: right; color: white; margin-top: 15px; margin-right: 20px; text-decoration: none;">Perfil</a>
+</header>
+
+
+        <body>
+            <!-- NAV BAR-->
+            <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Mobiles</a>
+                <div class="dropdown-content">
+                <a href="smartphones.html">Smartphones</a>
+                <a href="tablets.html">Tablets</a>
+                <a href="watches.html">Watches</a>
+                <a href="buds.html">Galaxy Buds</a>
+                </div>
+            </li>
+            <li><a href="televisiones.html">TV's</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Linea Blanca</a>
+                <div class="dropdown-content">
+                <a href="refrigeradores.html">Refrigeradores</a>
+                <a href="lavadoras.html">Lavadoras</a>
+                <a href="electrodomesticos.html">Electrodomesicos</a>
+                </div>
+            </li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+            <li style="float: right;"><a href="../catalog.php">Catalogo de venta</a></li>
+            </ul>
+            <br><br>
+            
+            <div class="carousel">
+              <input type="radio" name="carousel" id="slide1" checked>
+              <input type="radio" name="carousel" id="slide2">
+              <input type="radio" name="carousel" id="slide3">
+              <input type="radio" name="carousel" id="slide4">
+          
+              <div class="carousel-images">
+                  <img src="promo1.jpg" alt="Imagen 1">
+                  <img src="promo2.jpg" alt="Imagen 2">
+                  <img src="promo3.jpg" alt="Imagen 3">
+                  <img src="promo4.jpg" alt="Imagen 4">
+              </div>
+          
+              <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+          
+              <div class="carousel-indicators">
+                  <label for="slide1"></label>
+                  <label for="slide2"></label>
+                  <label for="slide3"></label>
+                  <label for="slide4"></label>
+              </div>
+          </div>
+
+
+            <br><br>
+            <center>
+                <h1>Articulos recomendados</h1>
+                <section>
+                    <div class="cont">
+                        <img src="accesorios/fundagalaxys24.jpg" alt="imagen 1">
+                        <h2>Producto 1</h2>
+                        <h1>Funda Galaxy S24</h1>
+                        <h3>Precio:</h3>
+                        <a style="font-family: outfit; color: #000000; font-size: 20px;" href="accesorios.html">Ver Mas</a>
+                    </div>
+
+                    <div class="cont">
+                      <img src="smartphones/galaxys24ultra.jpg" alt="imagen 1">
+                      <h2>Producto 2</h2>
+                      <h1>Galaxy S24 Ultra</h1>
+                      <h3>Precio:</h3>
+                      <a style="font-family: outfit; color: #000000; font-size: 20px;" href="smartphones.html">Ver Mas</a>
+                  </div>
+
+                  <div class="cont">
+                    <img src="elecrodomesticos/hornodemicroondas.jpg" alt="imagen 1">
+                    <h2>Producto 3</h2>
+                    <h1>Horno de Microondas</h1>
+                    <h3>Precio:</h3>
+                    <a style="font-family: outfit; color: #000000; font-size: 20px;" href="electrodomesticos.html">Ver Mas</a>
+                </div>
+
+                <div class="cont">
+                  <img src="watches/galaxywaych6.jpg" alt="imagen 1">
+                  <h2>Producto 3</h2>
+                  <h1>Galaxy Watch 6</h1>
+                  <h3>Precio:</h3>
+                  <a style="font-family: outfit; color: #000000; font-size: 20px;" href="watches.html">Ver Mas</a>
+              </div>
+                </section>
+                <br><br><br>
+
+                <img src="anuncio.jpg" alt="">
+                <br><br>
+                <h1 style="position: absolute; color: white; margin-left: 600px; margin-top: 50px;">Select service</h1>
+                <h3 style="position: absolute; color: white; margin-left: 600px; margin-top: 130px;">Un servicio especializado para ti</h3>
+                <img style="width: 100%;" src="anuncio2.jpg" alt="">
+                <br><br>
+            </center>
+            
+        </body>
+
+
+        <script>
+
+          let currentSlide = 1;
+          const totalSlides = 4;
+  
+          function changeSlide(direction) {
+          currentSlide += direction;
+          if (currentSlide < 1) {
+          currentSlide = totalSlides;
+          } else if (currentSlide > totalSlides) {
+          currentSlide = 1;
+          }
+          document.getElementById('slide' + currentSlide).checked = true;
+          }
+  
+          </script>
+
+
+        <footer>
+          
+          <div class="divfoot">
+            <h3>Nuestro correo electronico empresarial</h3>
+              <br>
+              <input type="text" placeholder="Samsung@empresarial.com.mx"> <button class="enviar">a</button>
+              
+          </div>
+
+          <div class="divfoot">
+              <h2>Contacto:</h2>
+              <h4>Janna Stephanie Ramirez Granados</h4>
+              <h4>4-J</h4>
+              <h5>Programacion</h5>
+              <h5> Leticia Meza Diaz</h5>
+          </div>
+  
+          <div class="divfoot">
+              <h2>Redes Sociales:</h2>
+              <h4>Facebook</h4>
+              <h4>Instagram</h4>
+              <h4>Whatsapp: 6561234567</h4>
+          </div>
+      </footer><br>
+     <footer style="color: #000000; font-family: outfit; font-weight: lighter;">Copyright© 1995-2024 Samsung | Todos los derechos reservados.</footer>
+</html>
+
+

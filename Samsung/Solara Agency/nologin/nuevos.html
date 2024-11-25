@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Samsung</title>
+  <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+    border-radius: 40px;
+    font-family: "Outfit", sans-serif;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(159, 159, 159);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  transition: 0.3s;
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+header
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+h1,h2,h3,h4,h5,h6,p,ul
+{font-family: "Outfit", sans-serif;
+}
+section
+{
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont
+{
+    width: 32%;
+    text-align: center;
+    border:2px solid black;
+    height: 450px;
+    margin-right: 5px;
+    transition: 0.2s ease;
+    margin-bottom: 30px;
+}
+.cont:hover
+{
+    width: 33%;
+    text-align: center;
+    border:2px solid black;
+    height: 450px;
+    margin-right: 5px;
+}
+.cont img
+{
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+}
+.cont:hover img
+{
+    width: 220px;
+    text-align: center;
+    
+    height: 220px;
+}
+button
+{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  transition: .2s ease;
+}
+button:hover
+{
+  border: 1px solid black;
+  color: black;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+}
+.divfoot
+        {
+            color: #000000;
+            text-align: justify;
+            margin-right: 40px;
+            width: 30%;
+            height: auto;
+            padding: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        input
+        {
+            border-radius: 40px; border: 2px solid black; height: 50px; width: 250px; background-color: #ffffff;
+        }
+        input::placeholder
+        {
+            color: #000000;
+        }
+        .enviar
+        {
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            border: none;
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+        }
+        .enviar:hover
+        {
+            background-color: #cacaca;
+            color: black;
+            
+            height: 50px;
+            width: 50px;
+            border-radius: 30px;
+        }
+        footer
+    {
+      border: 3px solid black;
+        background-color: #ffffff;
+        color: #ffffff; 
+        display: flex;
+        padding: 20px;
+    }
+
+</style>
+</head>
+
+<!-- HEADER -->
+<header>
+  <img style="height: 100%; width: 30%;" src="logo.png" alt=""> <a href="../Index.html" style="font-size: 45px; font-family: Outfit; float: right; color: white; margin-top: 15px; margin-right: 20px; text-decoration: none;">Perfil</a>
+</header>
+
+
+        <body>
+            <!-- NAV BAR-->
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Mobiles</a>
+                  <div class="dropdown-content">
+                  <a href="smartphones.html">Smartphones</a>
+                  <a href="tablets.html">Tablets</a>
+                  <a href="watches.html">Watches</a>
+                  <a href="buds.html">Galaxy Buds</a>
+                  </div>
+              </li>
+              <li><a href="televisiones.html">TV's</a></li>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Linea Blanca</a>
+                  <div class="dropdown-content">
+                  <a href="refrigeradores.html">Refrigeradores</a>
+                  <a href="lavadoras.html">Lavadoras</a>
+                  <a href="electrodomesticos.html">Electrodomesicos</a>
+                  </div>
+              </li>
+              <li><a href="accesorios.html">Accesorios</a></li>
+              <li style="float: right;"><a href="carrito.html">Carrito</a></li>
+              </ul>
+            <br><br>
+
+            
+            <!-- Contenedores -->
+            <center>
+                <section>
+                  <div class="cont product" data-id="7" data-name="Protector de pantalla anti-reflejante Galaxy S24" data-price="449">
+                    <img src="accesorios/protectorpantallaantireflejantegalaxys24.jpg" alt="">
+                    <h2>Protector de pantalla anti-reflejante Galaxy S24</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$449 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="8" data-name="S Pen Creator" data-price="1199">
+                    <img src="accesorios/spencreator.jpg" alt="">
+                    <h2>S Pen Creator</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Blanco </li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$1,199 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="9" data-name="Galaxy SmartTag" data-price="1599">
+                    <img src="accesorios/galaxysmartag.jpg" alt="">
+                    <h2>Galaxy SmartTag</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Negro </li><br>
+                        <li>Almacenamiento: 1000 </li>
+                    </ul>
+                    <h3>$1,599 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <!--LINEA 2-->
+                
+                <div class="cont product" data-id="10" data-name="Funda transparente con accesorio Galaxy S24" data-price="799">
+                    <img src="accesorios/galaxys24fundatransparente.jpg" alt="">
+                    <h2>Funda transparente con accesorio Galaxy S24</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$799 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="11" data-name="Funda Galaxy S24" data-price="799">
+                    <img src="accesorios/fundagalaxys24.jpg" alt="">
+                    <h2>Funda Galaxy S24</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Negro matte</li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$799 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="12" data-name="Correa para deportes" data-price="949">
+                    <img src="accesorios/correaparadeportes.jpg" alt="">
+                    <h2>Correa para deportes</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Rosa Palido </li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$949 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <!-- linea 3-->
+                
+                <div class="cont product" data-id="13" data-name="Correa de tela delgada" data-price="949">
+                    <img src="accesorios/correadeteladelgada.jpg" alt="">
+                    <h2>Correa de tela delgada</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Blanco </li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$949 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="14" data-name="Cargador inalámbrico" data-price="1099">
+                    <img src="accesorios/cargadorinalambrico.jpg" alt="">
+                    <h2>Cargador inalámbrico</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Negro </li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$1,099 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+                <div class="cont product" data-id="15" data-name="Adaptador de corriente 25W" data-price="399">
+                    <img src="accesorios/adaptadordecorriente.jpg" alt="">
+                    <h2>Adaptador de corriente 25W</h2>
+                    <ul style="margin-left: 130px;">
+                        <li>Color: Negro </li><br>
+                        <li>Almacenamiento: 1000</li>
+                    </ul>
+                    <h3>$399 MXN</h3>
+                    <button class="add-to-cart" onclick="alerta()">Agregar al carrito</button>
+                </div>
+                
+
+                  <!--linea 4-->
+                </section>
+            </center>
+
+            <section style="display: none; border: 2px solid black; width: 700px; padding: 20px; font-family: Arial, sans-serif;" class="carro">
+              <img style="width: 70%;" height="auto" src="logo.png" alt="">
+              <hr>
+              <h2 style="text-align: center; font-size: 24px; margin-bottom: 20px;">Carrito de compras</h2>
+              <hr>
+              <ul style="list-style: none; padding: 0; margin: 0; font-size: 20px; width: 50%;" class="cart-list"></ul>
+              <hr>
+              <p class="total" style="font-size: 20px; margin-top: 20px;">Total de la compra:  $<span class="total-value" style="font-weight: bold;">0.00</span></p>
+              <hr>            
+              <p class="iva" style="font-size: 20px;">IVA:  $<span class="iva-value" style="font-weight: bold;">0.00</span></p>
+              <hr>
+              <p class="total-with-iva" style="font-size: 20px;">Total con IVA:  $<span class="total-with-iva-value" style="font-weight: bold;">0.00</span></p>
+              <button class="agregaralcarrito pagar" style="margin-top: 20px; padding: 10px 20px; font-size: 18px; background-color: #61caff; color: white; border: none; border-radius: 4px; cursor: pointer;">Pagar carrito</button>
+              <button class="agregaralcarrito clear-cart" style="margin-top: 20px; margin-left: 10px; padding: 10px 20px; font-size: 18px; background-color: #61caff; color: white; border: none; border-radius: 4px; cursor: pointer;">Eliminar carrito</button>
+              <br><br>
+          </section>
+            
+        </body>
+
+        <script src="script.js">
+        </script>
+        <script>
+          // Obtener todos los botones en la página
+          const buttons = document.querySelectorAll('button');
+  
+          // Iterar sobre cada botón y agregar un evento de clic
+          buttons.forEach(button => {
+              button.addEventListener('click', function() {
+                  // Mostrar la alerta al hacer clic en cualquier botón
+                  alert('No inicio de sesion');
+              });
+          });
+      </script>
+
+
+        <footer>
+          
+          <div class="divfoot">
+            <h3>Nuestro correo electronico empresarial</h3>
+              <br>
+              <input type="text" placeholder="Samsung@empresarial.com.mx"> <button class="enviar">a</button>
+              
+          </div>
+
+          <div class="divfoot">
+              <h2>Contacto:</h2>
+              <h4>Janna Stephanie Ramirez Granados</h4>
+              <h4>4-J</h4>
+              <h5>Programacion</h5>
+              <h5> Leticia Meza Diaz</h5>
+          </div>
+  
+          <div class="divfoot">
+              <h2>Redes Sociales:</h2>
+              <h4>Facebook</h4>
+              <h4>Instagram</h4>
+              <h4>Whatsapp: 6561234567</h4>
+          </div>
+      </footer><br>
+     <footer style="color: #000000; font-family: outfit; font-weight: lighter;">Copyright© 1995-2024 Samsung | Todos los derechos reservados.</footer>
+</html>
+
+
